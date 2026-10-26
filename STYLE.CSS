@@ -160,3 +160,146 @@ p {
     color: #B86F52;
 }
 
+.about-section {
+    max-width: 850px;
+    margin: 100px auto;
+    padding: 32px;
+    background-color: #EFE9DD;
+    border-radius: 16px;
+}
+
+.about-section h2 {
+    color: #586A51;
+    font-size: 28px;
+}
+
+.about-text {
+    max-width: 700px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.journey-section {
+    max-width: 850px;
+    margin: 100px auto;
+}
+
+.timeline {
+    margin-top: 36px;
+    padding-left: 24px;
+    border-left: 2px solid #D5CBBB;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 32px 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -31px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #75856D;
+    border: 3px solid #F7F1E7;
+    border-radius: 50%;
+}
+
+.timeline-label {
+    color: #B86F52;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.timeline-item h3 {
+    color: #586A51;
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    line-height: 1.7;
+}
+
+.nav-links a.active {
+    color: #586A51;
+    font-weight: bold;
+    border-bottom: 2px solid #B86F52;
+    padding-bottom: 6px;
+}
+
+/* Shared polish for every page */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.navbar {
+    padding: 24px 0;
+}
+
+.nav-links a {
+    transition: color 0.2s ease;
+}
+
+.intro,
+.projects-section,
+.about-section,
+.journey-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.project-card {
+    box-shadow: 0 6px 20px rgba(81, 72, 63, 0.04);
+}
+
+.project-card:hover {
+    box-shadow: 0 12px 28px rgba(81, 72, 63, 0.09);
+}
+
+.btn {
+    cursor: pointer;
+}
+
+::selection {
+    background-color: #DDE5D5;
+    color: #51483F;
+}
+
+/* Home page personality */
+
+.title-dot {
+    color: #B86F52;
+}
+
+.intro h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    max-width: 750px;
+    margin: 20px 0;
+}
+
+.mini-note {
+    display: inline-block;
+    background-color: #E7EBDD;
+    color: #586A51;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
