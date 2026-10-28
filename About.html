@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="STYLE.CSS">
 </head>
 <body>
+    <div class="decor-orb orb-one"></div>
+    <div class="decor-orb orb-two"></div>
+    <div class="decor-orb orb-three"></div>
+    <div class="decor-orb orb-four"></div>
+    <div class="decor-orb orb-five"></div>
 
     <nav class="navbar">
         <div class="nav-links">
@@ -85,63 +90,61 @@
     </div>
 </section>
 
+
 <script>
-    const hobbies = [
-        {
-            word: "MUSIC",
-            note: "A little music for different moods and moments."
+    const hobbyData = {
+        music: {
+            number: "01 / 05",
+            title: "Music",
+            description: "A little music for different moods, moments, and everything in between."
         },
-        {
-            word: "STORIES",
-            note: "I enjoy reading, writing, and getting lost in stories."
+        reading: {
+            number: "02 / 05",
+            title: "Reading & Writing",
+            description: "I enjoy exploring stories through reading and expressing ideas through writing."
         },
-        {
-            word: "CREATE",
-            note: "Art and creativity give me space to explore new ideas."
+        creativity: {
+            number: "03 / 05",
+            title: "Art & Creativity",
+            description: "Art gives me a space to experiment, be creative, and look at things differently."
         },
-        {
-            word: "CURIOSITY",
-            note: "I love learning new things and exploring unfamiliar topics."
+        exploring: {
+            number: "04 / 05",
+            title: "Exploring New Things",
+            description: "I love learning about unfamiliar topics and discovering new things."
         },
-        {
-            word: "SLOW DOWN",
-            note: "Movies, series, and quiet time help me recharge."
+        quiet: {
+            number: "05 / 05",
+            title: "Quiet Time",
+            description: "Movies, series, and peaceful time alone help me recharge."
         }
-    ];
+    };
 
-    let currentIndex = 0;
+    const tabs = document.querySelectorAll(".hobby-tab");
+    const number = document.getElementById("hobby-number");
+    const title = document.getElementById("hobby-title");
+    const description = document.getElementById("hobby-description");
 
-    const hobbyWords = document.querySelectorAll(".personality-word");
-    const hobbyCount = document.getElementById("personality-count");
-    const hobbyNote = document.getElementById("personality-note");
+    tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+            const hobby = hobbyData[tab.dataset.hobby];
 
-    function showHobby(index) {
-        currentIndex = (index + hobbies.length) % hobbies.length;
+            if (!hobby) return;
 
-        hobbyWords.forEach((word, i) => {
-            word.classList.toggle("active", i === currentIndex);
+            number.textContent = hobby.number;
+            title.textContent = hobby.title;
+            description.textContent = hobby.description;
+
+            tabs.forEach(function (item) {
+                item.classList.toggle("active", item === tab);
+            });
         });
-
-        hobbyCount.textContent =
-            `0${currentIndex + 1} / 0${hobbies.length}`;
-
-        hobbyNote.textContent = hobbies[currentIndex].note;
-    }
-
-    document.getElementById("personality-prev").addEventListener("click", () => {
-        showHobby(currentIndex - 1);
     });
-
-    document.getElementById("personality-next").addEventListener("click", () => {
-        showHobby(currentIndex + 1);
-    });
-
-    hobbyWords.forEach((word, i) => {
-        word.addEventListener("click", () => showHobby(i));
-    });
-
-    showHobby(0);
 </script>
+</body>
+</html>
+
+
 </body>
 </html>
 

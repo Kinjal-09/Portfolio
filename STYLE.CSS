@@ -1053,3 +1053,73 @@ h3 {
     }
 }
 
+/* Decorative floating orbs */
+
+/* Decorative floating orbs */
+.decor-orb {
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        #f3d7bd,
+        #d9ad7c 45%,
+        #b96545
+    );
+    opacity: 0.32;
+    filter: blur(1px);
+    pointer-events: none;
+    z-index: 0;
+    animation: float-orb 5s ease-in-out infinite;
+}
+
+.orb-one {
+    top: 18%;
+    left: 4%;
+}
+
+.orb-two {
+    right: 5%;
+    bottom: 12%;
+    width: 90px;
+    height: 90px;
+    animation-delay: -2s;
+}
+
+@keyframes float-orb {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+}
+/* Extra floating bubbles */
+.orb-three {
+    width: 45px;
+    height: 45px;
+    top: 35%;
+    right: 22%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+}
+
+.orb-four {
+    width: 60px;
+    height: 60px;
+    bottom: 25%;
+    left: 18%;
+    animation-duration: 7s;
+    animation-delay: -3s;
+}
+
+.orb-five {
+    width: 30px;
+    height: 30px;
+    top: 12%;
+    right: 35%;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
