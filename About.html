@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,37 +10,142 @@
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="nav-logo">Curiosity<span>.</span></a>
-
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
+            <a href="about.html" class="active" aria-current="page">About</a>
             <a href="journey.html">Journey</a>
         </div>
     </nav>
 
     <main class="about-section">
-        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <section class="about-hero">
 
-        <h1>Always learning, always exploring.</h1>
+            <div class="about-photo-wrap">
+                <img
+                    src="images/profile.jpg"
+                    alt="Photo of Kinjal"
+                    class="about-photo"
+                >
+                <span class="photo-note">a little bit of me ✳</span>
+            </div>
 
-        <p class="about-text">
-            Hi, I'm Kinjal — an aspiring AI and Data Science engineer.
-            I enjoy exploring new ideas, solving problems, and learning
-            by building projects.
-        </p>
+            <div class="about-intro">
+                <p class="eyebrow">THE PERSON BEHIND THE PROJECTS</p>
 
-        <p class="about-text">
-            I'm currently developing my skills in Python, Data Science,
-            Machine Learning, Generative AI, and Agentic AI.
-            This portfolio is one of the ways I'm documenting my journey.
-        </p>
+                <h1>Hey, I'm Kinjal<span class="title-dot">.</span></h1>
 
-        <a href="projects.html" class="btn btn-primary">
-            Explore my projects →
-        </a>
+                <p class="about-lead">
+                    A curious mind, a creative side, and a growing love for tech.
+                </p>
+
+                <p class="about-text">
+                    I'm a CST student exploring Data Science and Artificial
+                    Intelligence. I enjoy learning new things, experimenting
+                    with ideas, and turning what I learn into projects of my own.
+                </p>
+
+                <p class="about-text">
+                    Outside tech, I enjoy music, reading, writing, art,
+                    movies and series, and quiet time to recharge.
+                    There's always something new I'm curious about.
+                </p>
+
+                <a href="projects.html" class="btn btn-primary">
+                    See what I'm building →
+                </a>
+            </div>
+
+        </section>
     </main>
+    
+ 
+
+<section class="hobbies-section">
+    <p class="eyebrow">THE LITTLE THINGS</p>
+    <h2>A little more about me<span class="title-dot">.</span></h2>
+    <p class="section-description">
+        Beyond tech, here's what makes me, me.
+    </p>
+
+    <div class="hobby-tabs">
+        <button class="hobby-tab active" data-hobby="music" type="button">Music</button>
+        <button class="hobby-tab" data-hobby="reading" type="button">Reading & Writing</button>
+        <button class="hobby-tab" data-hobby="creativity" type="button">Art & Creativity</button>
+        <button class="hobby-tab" data-hobby="exploring" type="button">Exploring</button>
+        <button class="hobby-tab" data-hobby="quiet" type="button">Quiet Time</button>
+    </div>
+
+    <div class="hobby-content" aria-live="polite">
+        <p class="hobby-number" id="hobby-number">01 / 05</p>
+        <h3 id="hobby-title">Music</h3>
+        <p id="hobby-description">
+            A little music for different moods, moments, and everything in between.
+        </p>
+    </div>
+</section>
+
+<script>
+    const hobbies = [
+        {
+            word: "MUSIC",
+            note: "A little music for different moods and moments."
+        },
+        {
+            word: "STORIES",
+            note: "I enjoy reading, writing, and getting lost in stories."
+        },
+        {
+            word: "CREATE",
+            note: "Art and creativity give me space to explore new ideas."
+        },
+        {
+            word: "CURIOSITY",
+            note: "I love learning new things and exploring unfamiliar topics."
+        },
+        {
+            word: "SLOW DOWN",
+            note: "Movies, series, and quiet time help me recharge."
+        }
+    ];
+
+    let currentIndex = 0;
+
+    const hobbyWords = document.querySelectorAll(".personality-word");
+    const hobbyCount = document.getElementById("personality-count");
+    const hobbyNote = document.getElementById("personality-note");
+
+    function showHobby(index) {
+        currentIndex = (index + hobbies.length) % hobbies.length;
+
+        hobbyWords.forEach((word, i) => {
+            word.classList.toggle("active", i === currentIndex);
+        });
+
+        hobbyCount.textContent =
+            `0${currentIndex + 1} / 0${hobbies.length}`;
+
+        hobbyNote.textContent = hobbies[currentIndex].note;
+    }
+
+    document.getElementById("personality-prev").addEventListener("click", () => {
+        showHobby(currentIndex - 1);
+    });
+
+    document.getElementById("personality-next").addEventListener("click", () => {
+        showHobby(currentIndex + 1);
+    });
+
+    hobbyWords.forEach((word, i) => {
+        word.addEventListener("click", () => showHobby(i));
+    });
+
+    showHobby(0);
+</script>
+</body>
+</html>
+
+
 
 </body>
 </html>
