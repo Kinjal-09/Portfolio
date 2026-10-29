@@ -1210,3 +1210,26 @@ h3 {
 .journey-cursor.has-label .cursor-label {
     opacity: 1;
 }
+.timeline-item {
+    cursor: none;
+}
+@media (hover: none), (pointer: coarse) {
+    .journey-cursor {
+        display: none;
+    }
+
+    .timeline-item {
+        cursor: auto;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .journey-cursor {
+        transition: none;
+    }
+
+    .timeline-item,
+    .timeline-item.current-phase {
+        transition: none;
+    }
+}
+
