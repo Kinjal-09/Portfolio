@@ -46,6 +46,13 @@ Curiosity-in-Progress/
 2. Open the project folder in your code editor.
 3. Open `index.html` in your browser to explore the website.
 
+
+
+## 🌐 Live Website
+
+Explore my portfolio:([Curiosity in Progress](https://curiosity-in-progress.vercel.app/)) [ [curiosity-in-progress.vercel.app](https://curiosity-in-progress.vercel.app/) ].
+
+
 ## 🌱 What's Next?
 
 This portfolio will continue to evolve as I learn new skills, build more projects, and explore Data Science, Machine Learning, and Generative AI.
