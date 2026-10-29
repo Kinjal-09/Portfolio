@@ -1,65 +1,58 @@
-# 🌱 Curiosity in Progress
 
-### A personal portfolio built while learning, experimenting, and growing.
+# Curiosity in Progress 🌱
 
-Welcome to my little corner of the internet!
+A personal portfolio website documenting my journey of learning, building, and exploring technology.
 
-I'm Kinjal, an aspiring **AI & Data Science Engineer** who enjoys exploring new ideas, solving problems, and learning by building real projects.
+This project is a little corner of the internet where I share my interests, projects, personality, and progress as I work toward becoming a **Data Science and AI Engineer**.
 
-This portfolio is a work in progress — just like my learning journey. I'm building it step by step and improving it as I learn new things.
+## ✨ About the Project
 
-## ✨ About This Project
+Curiosity in Progress is a multi-page personal portfolio built with a warm, minimal aesthetic using cream, terracotta, caramel, and chocolate-brown tones.
 
-**Curiosity in Progress** is my personal developer portfolio. It showcases my projects, learning journey, and interests in technology.
+Rather than being just a traditional portfolio, it reflects my journey as a learner — including the things I build, the topics I explore, and the person behind the code.
 
-My goal is to keep it simple, creative, and easy to explore while learning the fundamentals of web development along the way.
+## 🚀 Features
 
-## 🛠️ Built With
+- **Home:** A personal introduction with decorative orbit rings and animated elements.
+- **Projects:** A dedicated space to showcase my projects and experiments.
+- **About:** A glimpse into my personality, interests, and hobbies, with interactive content.
+- **Journey:** A visual timeline documenting my learning progress.
+- **Custom cursor:** A simple animated ring that follows the mouse.
+- **Animated details:** Floating decorative orbs and subtle visual effects.
+- **Consistent design:** A cohesive warm color palette across all four pages.
 
-- **HTML** — page structure and content
-- **CSS** — layouts, colors, responsive styling, and animations
-- **JavaScript** — interactive hobby tabs and dynamic content updates
+## 🛠️ Tech Stack
 
-No frontend frameworks — just the fundamentals.
+- HTML5 — page structure
+- CSS3 — styling, animations, layouts, and responsive adjustments
+- JavaScript — cursor interactions and dynamic page behavior
 
-## ✨ Features
+## 📂 Project Structure
 
-- 🌿 **Four-page portfolio** — Home, Projects, About, and Journey
-- 🎨 **Warm visual theme** — cream, terracotta, and brown tones
-- 🫧 **Floating decorative orbs** — subtle animated elements across the pages
-- 🌀 **Decorative orbit rings** — visual details on the home page
-- 🎵 **Interactive hobby tabs** — explore Music, Reading & Writing, Art & Creativity, Exploring, and Quiet Time
-- 🔄 **Dynamic content updates** — hobby titles, descriptions, and section numbers change when a tab is selected
-- 📱 **Responsive styling** — ongoing improvements for different screen sizes
+```text
+Curiosity-in-Progress/
+├── index.html
+├── projects.html
+├── about.html
+├── journey.html
+├── STYLE.CSS
+├── cursor.js
+└── journey.js
+```
 
-## 🚀 Featured Projects
+## 💻 Run Locally
 
-### 1. Smart Expense Tracker
+1. Clone or download this repository.
+2. Open the project folder in your code editor.
+3. Open `index.html` in your browser to explore the website.
 
-A Python project for recording expenses, viewing summaries, and saving data using JSON.
+## 🌱 What's Next?
 
-### 2. Python Quiz & Learning Platform
+This portfolio will continue to evolve as I learn new skills, build more projects, and explore Data Science, Machine Learning, and Generative AI.
 
-An interactive Python quiz featuring shuffled questions, scoring, timed questions, streaks, and achievements.
+For now, this is a work in progress — just like the person building it.
 
-### 3. Curiosity in Progress
-
-This portfolio itself! Built with HTML, CSS, and JavaScript, with new features added as I learn.
-
-## 🗺️ What's Coming Next?
-
-- [X] Basic portfolio structure
-- [X] Warm colors and introduction
-- [X] Project cards
-- [X] Interactive hobby tabs
-- [X] Dynamic hobby content
-- [X] Floating decorative animations
-- [ ] Animated orbit rings
-- [ ] Learning journey timeline improvements
-- [ ] Interactive terminal
-- [ ] Project filtering
-- [ ] Fun Easter eggs
-- [ ] Further responsive improvements for mobile screens
+---
 
 ## 🎯 My Learning Goals
 

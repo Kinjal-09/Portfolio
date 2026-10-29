@@ -14,7 +14,7 @@
     <div class="decor-orb orb-four"></div>
     <div class="decor-orb orb-five"></div>
     <div class="journey-cursor" aria-hidden="true">
-    <span class="cursor-label"></span>
+        <span class="cursor-label"></span>
 </div>
 
     <nav class="navbar">
@@ -36,39 +36,64 @@
         <p class="section-description">
             Learning takes time. Here's what I'm exploring along the way.
         </p>
+    
+<div class="journey-flow">
 
-        <div class="timeline">
+    <article class="journey-stage">
+        <p class="timeline-label">THEN</p>
+        <h2>Where it began</h2>
+        <p>
+            Every journey starts somewhere. Mine began with Python,
+            learning programming fundamentals and turning ideas into
+            small projects.
+        </p>
 
-            <article class="timeline-item" data-cursor="terminal">
-                <span class="timeline-dot"></span>
-                <p class="timeline-label">FOUNDATIONS</p>
-                <h2>Python & Programming</h2>
-                <p>
-                    Learning programming concepts and applying them
-                    through small projects.
-                </p>
-            </article>
-
-            <article class="timeline-item" data-cursor="data">
-                <span class="timeline-dot"></span>
-                <p class="timeline-label">DATA SKILLS</p>
-                <h2>Working with Data</h2>
-                <p>
-                    Exploring NumPy, pandas, and data visualization.
-                </p>
-            </article>
-
-            <article class="timeline-item current-phase" data-cursor="ml">
-                <span class="timeline-dot"></span>
-                <p class="timeline-label">CURRENT FOCUS</p>
-                <h2>Machine Learning & AI</h2>
-                <p>
-                    Building ML foundations and exploring Generative AI
-                    and Agentic AI.
-                </p>
-            </article>
-
+        <div class="journey-topics">
+            <span>Python</span>
+            <span>Problem-solving</span>
+            <span>Mini projects</span>
         </div>
+    </article>
+
+    <article class="journey-stage journey-current">
+        <p class="timeline-label">NOW · CURRENT FOCUS</p>
+        <h2>Learning Machine Learning</h2>
+        <p>
+            I'm building my ML foundations, exploring the mathematics
+            behind models, and learning how data can help solve problems.
+        </p>
+
+        <div class="journey-topics">
+            <span>ML fundamentals</span>
+            <span>ML mathematics</span>
+            <span>Model evaluation</span>
+        </div>
+
+        <span class="current-indicator">
+            <span class="indicator-dot"></span>
+            Currently learning
+        </span>
+    </article>
+
+    <article class="journey-stage">
+        <p class="timeline-label">NEXT · WHAT'S AHEAD</p>
+        <h2>Building with AI</h2>
+        <p>
+            My next goals include deeper machine learning, Generative AI,
+            Agentic AI, and deploying useful real-world applications.
+        </p>
+
+        <div class="journey-topics">
+            <span>Deep learning</span>
+            <span>Generative AI</span>
+            <span>Agentic AI</span>
+            <span>Deployment</span>
+        </div>
+    </article>
+    </div>
+
+
+
     </main>
     <script src="journey.js"></script>
 
