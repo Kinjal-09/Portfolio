@@ -13,6 +13,9 @@
     <div class="decor-orb orb-three"></div>
     <div class="decor-orb orb-four"></div>
     <div class="decor-orb orb-five"></div>
+    <div class="journey-cursor" aria-hidden="true">
+    <span class="cursor-label"></span>
+</div>
 
     <nav class="navbar">
         
@@ -36,7 +39,7 @@
 
         <div class="timeline">
 
-            <article class="timeline-item">
+            <article class="timeline-item" data-cursor="terminal">
                 <span class="timeline-dot"></span>
                 <p class="timeline-label">FOUNDATIONS</p>
                 <h2>Python & Programming</h2>
@@ -46,7 +49,7 @@
                 </p>
             </article>
 
-            <article class="timeline-item">
+            <article class="timeline-item" data-cursor="data">
                 <span class="timeline-dot"></span>
                 <p class="timeline-label">DATA SKILLS</p>
                 <h2>Working with Data</h2>
@@ -55,7 +58,7 @@
                 </p>
             </article>
 
-            <article class="timeline-item">
+            <article class="timeline-item current-phase" data-cursor="ml">
                 <span class="timeline-dot"></span>
                 <p class="timeline-label">CURRENT FOCUS</p>
                 <h2>Machine Learning & AI</h2>
@@ -67,6 +70,7 @@
 
         </div>
     </main>
+    <script src="journey.js"></script>
 
 </body>
 </html>
